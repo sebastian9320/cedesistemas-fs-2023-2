@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://landing.zytheme.com/siena/assets/images/background/bg-1.png');
+    background-position: 0;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    padding: 45px 13px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-content{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+nav{
+    flex: 1;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul{
+    padding: 0;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav a{
+    color: #6262a0;
+    text-decoration: none;
+    font-size: 1.0em;
+}
+
+nav a:hover{
+    color: #664ffa;
+}
+
+h1, h2, h3{
+    color: #6262a0;
+    font-size: 2.3em;
+    font-weight: 700;
+}
+
+p{
+    color: #ababc7;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px 60px;
+    border-radius: 6px;
+    box-shadow: 1px 2px #ededed;
+    box-shadow: 0px 2px 4px 1px rgba(163,163,163,0.79);
+    -webkit-box-shadow: 0px 2px 4px 1px rgba(163,163,163,0.79);
+    -moz-box-shadow: 0px 2px 4px 1px rgba(163,163,163,0.79);
+}
+
+form h4{
+    text-align: center;
+    color: #6262a0;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.form-control label {
+    text-align: center;
+    font-weight: lighter;
+    display: block;
+    color: #664ffa;
+    font-size: 0.95em;
+    margin-bottom: 10px;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+    border-radius: 5px;
+    background-color: #f7f6ff;
+    color: #222;
+    border: 1px solid #ced4da;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-alert{
+    margin: 5px;
+    text-align: center;
+}
+
+.btn-primary{
+    width: 100%;
+    padding: 15px;
+    background-color: #664ffa;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background-color: #3b1df9;
+}
+
+section#home{
+    padding: 1.5rem;
+}
+
+section#home .description-content{
+    flex: 6;
+}
+
+section#home .form-content{
+    flex: 4;
+}
+
+.d-flex-between{
+    display: flex;
+    justify-content: space-between;
+}

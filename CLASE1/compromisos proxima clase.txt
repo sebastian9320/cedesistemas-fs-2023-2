@@ -1,0 +1,5 @@
+- Pensar en una idea de proyecto para aplicar los conocimientos y herramientas utilizadas 
+a lo largo del curso.
+- Terminar maquetados de la segunda sección de feature de la landing
+- (opcional) Revisar documentación de html y css para reforzar o aprender etiquetas y opciones 
+de estilo al maquetar 
