@@ -2,7 +2,7 @@
 
 * {
     padding: 0px;
-    margin: 0px
+    margin: 0px;
 } 
 
 body {
@@ -16,9 +16,21 @@ body {
 
 header{
     display: flex;
-    padding: 45px 13px;
     justify-content: space-between;
     align-items: center;
+}
+
+header, .main-wrap{
+    padding: 3rem 5rem;
+}
+
+.title{
+    margin-bottom: 1rem;
+}
+
+.main-wrap{
+    display: flex;
+    flex-direction: column;
 }
 
 .logo-content{
@@ -55,7 +67,7 @@ nav a:hover{
     color: #664ffa;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
     color: #6262a0;
     font-size: 2.3em;
     font-weight: 700;
@@ -69,10 +81,10 @@ form {
     background-color: #fff;
     padding: 20px 60px;
     border-radius: 6px;
-    box-shadow: 1px 2px #ededed;
-    box-shadow: 0px 2px 4px 1px rgba(163,163,163,0.79);
-    -webkit-box-shadow: 0px 2px 4px 1px rgba(163,163,163,0.79);
-    -moz-box-shadow: 0px 2px 4px 1px rgba(163,163,163,0.79);
+    box-shadow: 0 10px 40px 0 rgba(32, 62, 84, 0.08);
+    
+    -webkit-box-shadow: 0 10px 40px 0 rgba(32, 62, 84, 0.08);
+    -moz-box-shadow: 0 10px 40px 0 rgba(32, 62, 84, 0.08);
 }
 
 form h4{
@@ -80,6 +92,7 @@ form h4{
     color: #6262a0;
     font-weight: 400;
     font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 
 .form-control {
@@ -128,18 +141,79 @@ form h4{
 }
 
 section#home{
-    padding: 1.5rem;
+    margin-bottom: 4rem;
 }
 
 section#home .description-content{
-    flex: 6;
+    padding: 0 2rem;
+    flex: 5;
 }
 
 section#home .form-content{
-    flex: 4;
+    padding: 0 2rem;
+    flex: 5;
+}
+
+
+section#feature{
+    width: 100%;
+}
+
+section#feature .title-section{
+    font-size: 0.8rem;
+    font-weight: lighter;
+    margin: 5rem 0;
+    text-align: center;
 }
 
 .d-flex-between{
     display: flex;
     justify-content: space-between;
 }
+
+.d-flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+.f-light{
+    font-weight: normal;
+}
+
+.f-bold{
+    font-weight: bold;
+}
+
+div.card-logo{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+div#logo-champ{
+    background-color: #5c48e0;
+}
+
+div#logo-team{
+    background-color: #02e6b8;
+}
+
+div#logo-chart{
+    background-color: #ff8c00;
+}
+
+div.card-content{
+    text-align: center;
+    padding: 2rem 0;
+}
+
+div.card-content > h4{
+    margin: 15px 0;
+}
+
+.panel-content .card{
+    margin: 1rem;
+}
+

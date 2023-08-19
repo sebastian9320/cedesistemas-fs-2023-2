@@ -1,0 +1,2 @@
+- Terminar landing page.
+- Revisar video de git para menejo de comandos.
