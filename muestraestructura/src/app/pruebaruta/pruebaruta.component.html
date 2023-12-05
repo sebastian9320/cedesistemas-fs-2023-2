@@ -1,0 +1,51 @@
+<div class="container my-4">
+  <div class="row">
+    <div class="col-6">
+      <p>Hoy es : {{dia}}</p>
+    </div>
+    <div class="col-6">
+      <p>Numero: {{numero}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <button class="btn btn-secondary" (click)="name()">Ejecutar</button>
+      <a class="btn btn-warning" routerLink="enrutando/otropath">Ir a otra ruta</a>
+    </div>
+    <div class="col-6">
+      <button type="button" class="btn btn-dark">OK</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 offset-3">
+      <img class="img-fluid" src="https://www.medellin.gov.co/es/wp-content/uploads/2021/11/vista-de-la-comuna-13-en-medellin.jpg" alt="">
+    </div>
+  </div>
+</div>
+<!--
+
+// al inicializar el componente
+ngOnInit() {}
+
+// capturar cambios
+ngOnChanges(changes) {}
+
+// identifica cuando los cambios afectan el componente
+ngDoCheck() {}
+
+//cuando la vista esta cargada totalmente del
+ngAfterContentInit() {}
+
+//cuando se carga de manera exitosa
+ngAfterContentChecked() {}
+
+// cuando todo el contenido se acaba de cargar
+ngAfterViewInit(){}
+
+// cuando las vistas se ejecutaron correctamente
+ngAfterViewChecked() {}
+
+//al destruir el componente
+ngOnDestroy(){}
+
+-->

@@ -1,0 +1,23 @@
+// query params
+// ?key=value&otherKey=otherValue
+app.get('/', (req, res) => {
+    const { name , age} = req.query
+    res.send(`NAME: ${name} AGE: ${age}`)
+})
+
+// body
+app.post('/', (req, res) => {
+    const {name, age, products} = req.body;
+    console.log(JSON.stringify({name, age, products}));
+    res.send('Hola mundo express POST!!!')
+})
+
+app.put('/users/:id', (req, res) => {
+    const id = req.params.id;
+    console.log(`USER ID: ${id}`)
+    res.send('Hola mundo express PUT!!!')
+})
+
+app.delete('/', (req, res) => {
+    res.send('Hola mundo express DELETE!!!')
+})
