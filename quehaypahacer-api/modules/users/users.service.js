@@ -21,7 +21,7 @@ const login = async ({ email, password }) => {
       response.token = await jwt.sign(payload, secretKey)
     }else{
       response.error = DICT_ERRORS.USER_PASS_WRONG
-      //throw errorHandler(DICT_ERRORS.USER_PASS_WRONG, { fields: "email" })
+      throw errorHandler(DICT_ERRORS.USER_PASS_WRONG, {})
     }
   } catch (error) {
     throw error.handled ? error : errorHandler(DICT_ERRORS.SERVER_ERROR, error)

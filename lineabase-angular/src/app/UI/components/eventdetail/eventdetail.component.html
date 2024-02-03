@@ -1,0 +1,19 @@
+<div class="card mb-3 col-8 offset-md-2 my-5">
+  <img class="card-img-top" src="{{event.image ?? ''}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{event.name ?? ''}}</h5>
+    <p class="card-text">{{event.description ?? ''}}</p>
+    <p class="card-text">{{event.address ?? ''}}</p>
+    <p class="card-text">{{event.date ?? ''}}</p>
+    <p class="card-text"><small class="text-muted">Last updated X mins ago</small></p>
+    <hr>
+    <div class="row">
+      <div class="col-6">
+        <strong class="card-text">${{event.price ?? ''}}</strong>
+      </div>
+      <div class="col-6 d-flex justify-content-end">
+        <button class="btn btn-primary">Registrarse</button>
+      </div>
+    </div>
+  </div>
+</div>

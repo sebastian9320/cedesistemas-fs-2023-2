@@ -1,0 +1,11 @@
+<div class="row mt-5 p-4">
+  <div *ngFor="let event of events; index as i;" class="card col-3 m-3">
+    <img class="card-img-top" src="{{event.image}}" height="350" alt="Card image cap">
+    <div class="card-body text-center">
+      <h5 class="card-title">{{event.name}}</h5>
+      <p class="card-text">{{event.description}}</p>
+      <p class="card-text"><small class="text-muted">Last update {{event.lastUpdated}} minutes ago</small></p>
+      <a class="btn btn-primary" [routerLink]="['/event-detail', event._id]">ver detalle</a>
+    </div>
+  </div>
+</div>

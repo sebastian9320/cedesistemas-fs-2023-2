@@ -1,7 +1,7 @@
 const errorHandler = (errorItem, extra = {}) => {
   const response = {
     ...extra,
-    message: `${errorItem.message}: ${extra.message}`
+    message: extra.message ? `${errorItem.message}: ${extra.message}`: errorItem.message
   }
 
   return {
